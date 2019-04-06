@@ -2,11 +2,13 @@
 
 This module should be the first to deploy in a remote state version fashion architecture.
 
+Note: your AWS credentials will automatically be retrieved by Terraform as long as there are located in `~/.aws/credentials` (under `[default]` section).
+
 Don't forget to setup your sensitive information inside a `variables.tf`
 e.g.
 ```terraform
 variable "aws-account-id" {
-  default = "[YOUR-AWS-ACCOUNT-DI]"
+  default = "[YOUR-AWS-ACCOUNT-ID]"
   description = "AWS account ID"
 }
 
