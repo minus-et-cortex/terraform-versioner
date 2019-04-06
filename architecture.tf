@@ -8,7 +8,7 @@ provider "aws" {
 # so when you will delete the files of the state it won't be able to sync and destroy too
 # meaning the s3 resource is the only one you will to destroy manually
 resource "aws_s3_bucket" "terraform-state-storage-s3" {
-    bucket = "terraform-remote-state-storage-s3-${var.aws-account-id}"
+    bucket = "terraform-remote-state-storage-s3-minus-et-cortex"
  
     versioning {
       enabled = true
